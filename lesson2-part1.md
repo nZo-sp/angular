@@ -50,41 +50,6 @@ export class BindingExample {
 <button (click)="sayHello()"></button>
 ```
 
-### Pipes
-
-...Angular pipes let you declare display-value transformations in your template HTML. A class with the @Pipe decorator defines a function that transforms input values to output values for display in a view...
-
-#### Some builtin pipes
-```html
-<!-- date pipe -->
-<p>Today is {{today | date}}</p>
-
-<!-- JSON pipe-->
-<p>Debug value: {{ myObj | json}}</p>
-
-<!-- decimal pipe-->
-<p>pi (3.5-5): {{pi | number:'3.5-5'}}</p>
-
-```
-
-#### Custom pipes
-
-To create a custom pipe decorate a class with the `@Pipe` decorator and impelemnts the `PipeTransform`.
-In the transform function the `value` parameter is the object target of the pipe. Any other parameters are optional.
-In the following example you can find a custom pipe that adds "Quote" to any string input. It takes an optional parameter to add the source of the quote
-
-```typescript
-import { Pipe, PipeTransform } from '@angular/core';
-
-@Pipe({name: 'quote'})
-export class Quote implements PipeTransform {
-  transform(value: string, by: string): string {
-    return by
-        ? `"...${value}..." (${by})`
-        : `"...${value}..."`;
-  }
-}
-```
 
 ##### usage
 ```html
@@ -123,4 +88,3 @@ Attribute directives alter the appearance or behavior of an existing element. In
 
 <div [ngClass]="anyStringOrObject">...</div>
 ```
-
