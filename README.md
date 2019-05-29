@@ -1,16 +1,7 @@
 In questo documento vengono formalizzate le attività necessarie per la parte pratica del corso appena concluso.
 
 Il progetto da realizzare va selezionato fra uno dei seguenti:
-	•	Tool per la definizione di tasks
-		o	Funzionalità suggerite:
-			-	Visualizzazione task con relativo stato
-			-	Funzione di filtro per assegnatario, stato, etc.)
-			-	Creazione nuovo task (stima, titolo, descrizione, area, priorità)
-			-	Funzione di assegnazione task per admin
-			-	Funzione di aggiornamento task per utente
-			-	Funzioni di Drag&Drop per cambiare stato, assegnatario e priorità di un task
-			-	Reportistica su task
-	
+
 	•	Tool per la gestione di turni di lavoro
 		o	Funzionalità suggerite:
 			-	Definizione di turno (orario inizio, orario fine, luogo/stabilimento)
@@ -21,6 +12,16 @@ Il progetto da realizzare va selezionato fra uno dei seguenti:
 			-	Visualizzazione calendario settimanale persone
 			-	Controllo dei conflitti (stessa persona assegnata a più turni)
 			-	Controlli orario settimanale per ogni persona
+			
+	•	Tool per la definizione di tasks
+		o	Funzionalità suggerite:
+			-	Visualizzazione task con relativo stato
+			-	Funzione di filtro per assegnatario, stato, etc.)
+			-	Creazione nuovo task (stima, titolo, descrizione, area, priorità)
+			-	Funzione di assegnazione task per admin
+			-	Funzione di aggiornamento task per utente
+			-	Funzioni di Drag&Drop per cambiare stato, assegnatario e priorità di un task
+			-	Reportistica su task
 
 	•	Tool per gestione richieste assenze di dipendenti (ferie, malattie, permessi studio, etc) 
 		o	Funzionalità suggerite:
@@ -87,6 +88,7 @@ Il progetto da realizzare va selezionato fra uno dei seguenti:
 			-	Download ICS
 
 Ricordiamo che:
+			
 	•	Siete liberi di scegliere la tecnologia lato server che preferite
 	•	Potete anche valutare di simulare il server usando un service client-side
 	•	Il client va realizzato in Angular 7
@@ -98,6 +100,7 @@ Ricordiamo che:
 	•	E’ gradita la pubblicazione su internet di una demo del progetto realizzato indicando nel readme l’url con relative credenziali
 
 I progetti saranno valutati in base a:
+
 	•	Gestione security (suggerito JWT)
 	•	Qualità del codice prodotto
 	•	Correttezza e chiarezza della documentazione
@@ -112,8 +115,9 @@ I progetti saranno valutati in base a:
 	•	User stories fornite
 
 Per realizzare il progetto è necessario:
-	-	fare un fork del repository
-	-   Inviare una email a angularcourse2019@baxenergy.com con indicazione del progetto che si vuole realizzare e con informazioni su: 
+
+	•	fare un fork del repository
+	•	Inviare una email a angularcourse2019@baxenergy.com con indicazione del progetto che si vuole realizzare e con informazioni su: 
 		o	Tipo progetto (fra quelli proposti)
 		o	Breve descrizione delle funzionalità che si intendono realizzare
 		o	Tecnologie server (se previste) che si intende utilizzare
