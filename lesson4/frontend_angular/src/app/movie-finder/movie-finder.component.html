@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-form-field appearance="standard">
+        <mat-label>Search</mat-label>
+        <input #searchInput matInput placeholder="Type a movie name">
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <div class="result-container">
+        <mat-list>
+            <mat-list-item
+                    *ngFor="let movie of searchResult"
+                    (click)="handleSelection(movie)"
+                    [class.selected]="selection?.id === movie.id"
+                    matRipple>
+                {{movie.title || movie.name}}
+            </mat-list-item>
+        </mat-list>
+    </div>
+</mat-card>

@@ -1,0 +1,12 @@
+<!-- Collego l'evento di click del bottone ad una funzione del componente che si
+     occuperà di aprire la dialog -->
+<button
+  mat-icon-button
+  (click)="showAbout()">
+  <!-- Aggiungo un icona al bottone uilizzando la mat-icon material:
+       https://material.angular.io/components/icon/overview -->
+  <mat-icon
+    [matTooltip]="aboutText">
+    favorite
+  </mat-icon>
+</button>

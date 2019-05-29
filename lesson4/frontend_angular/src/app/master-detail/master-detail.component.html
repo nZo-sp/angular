@@ -1,0 +1,12 @@
+<div class="content__master">
+    <!-- il componente ng-content è una specie di "teletrasporto" che prende tutti gli 
+         elementi figli del componente <app-master-detail> che corrispondono al selettore
+         definito dentro select e li sposta in questo punto -->
+    <ng-content select="[master-content]"></ng-content>
+</div>
+
+<div matRipple class="content__separator" [class.content__separator--disabled]="disableDetail" [matRippleDisabled]="disableDetail" (click)="toggleDetail()"></div>
+
+<div class="content__detail" [class.content__detail--collapsed]="hideDetail || disableDetail">
+    <ng-content select="[detail-content]"></ng-content>
+</div>

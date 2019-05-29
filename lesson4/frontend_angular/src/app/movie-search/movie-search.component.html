@@ -1,0 +1,11 @@
+
+<!-- Utilizzo un componente da me creato per gestire la divisione della pagina
+     ./master-detail/master-detail.component.ts 
+     Angular incoraggia la creazione di app tramite "Composizione". Bisogna evitare di
+     creare componenti troppo complessi. Il pattern consigliato è creare componenti piccoli
+     specificati nella risoluzione di poche features ed usare una composizione di questi 
+     componenti per creare un app complessa -->
+<app-master-detail class="container" [disableDetail]="!selectedMovie" [hideDetail]="!selectedMovie">
+    <app-movie-finder master-content (selectedMovie)="onMovieSelection($event)"></app-movie-finder>
+    <app-movie-detail detail-content [selection]="selectedMovie"></app-movie-detail>
+</app-master-detail>

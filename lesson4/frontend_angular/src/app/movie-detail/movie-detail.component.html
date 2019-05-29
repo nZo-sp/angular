@@ -1,0 +1,50 @@
+<mat-card>
+    <div *ngIf="selection" class="card-scroller">
+        <div class="card-content">
+            <mat-card-header>
+                <mat-card-title>{{selection.title || selection.name}}</mat-card-title>
+                <mat-card-subtitle>{{selection.release_date}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://image.tmdb.org/t/p/w500{{selection.poster_path}}" alt="Poster">
+            <mat-card-content>
+                <p>{{selection.overview}}</p>
+            </mat-card-content>
+            <mat-card-footer>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title><mat-icon>comment</mat-icon> &nbsp; Comments ({{comments.length}})</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div *ngIf="comments.length > 0">
+                        <mat-card class="card-comment" *ngFor="let comment of comments">
+                            <mat-card-header>
+                                <mat-card-title>{{comment.username}}</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <em>{{comment.text}}</em>
+                            </mat-card-content>
+                            <mat-card-footer>
+                                <mat-card-subtitle>{{comment.date | date: 'dd MMMM yyyy HH:mm:ss'}}</mat-card-subtitle>
+                            </mat-card-footer>
+                        </mat-card>
+                    </div>
+
+                    <p *ngIf="comments.length == 0">Non ci sono commenti.</p>
+
+                    <mat-divider [inset]="true"></mat-divider>
+
+                    <form class="comment-form" (ngSubmit)="addComment()">
+                        <mat-form-field class="input-full-width">
+                            <input matInput placeholder="Username" [(ngModel)]="commentToAdd.username" name="username">
+                        </mat-form-field>
+
+                        <mat-form-field class="input-full-width">
+                            <textarea matInput placeholder="Lascia un commento ..." [(ngModel)]="commentToAdd.text" name="commentText"></textarea>
+                        </mat-form-field>
+
+                        <button type="submit" mat-raised-button color="primary">COMMENTA</button>
+                    </form>
+                </mat-expansion-panel>
+            </mat-card-footer>
+        </div>
+    </div>
+</mat-card>

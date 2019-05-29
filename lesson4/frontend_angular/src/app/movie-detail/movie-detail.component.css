@@ -1,0 +1,57 @@
+:host {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+mat-card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-scroller {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.card-content {
+  min-width: 400px;
+  padding: 16px;
+}
+
+.comment-form {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.input-full-width {
+    width: 100%;
+}
+
+.card-comment {
+    margin-bottom: 1em;
+}
+
+.card-comment .mat-card-header {
+    padding-top: 1em;
+    color: darkblue;
+}
+
+.card-comment .mat-card-content {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.card-comment .mat-card-content p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.card-comment .mat-card-footer .mat-card-subtitle{
+    text-align: right;
+    padding-right: 2em;
+    color: darkgrey;
+}

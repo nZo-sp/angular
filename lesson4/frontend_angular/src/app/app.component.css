@@ -1,0 +1,14 @@
+.toolbar {
+  flex: 0 0 auto;
+  min-height: 0;
+}
+
+.toolbar__title {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toolbar__button--about {
+  flex: 0 0 auto;
+}

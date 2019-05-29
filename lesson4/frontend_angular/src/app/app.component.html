@@ -1,0 +1,20 @@
+<!-- Utilizzo un componente già pronto angular material
+     come da documentazione: https://material.angular.io/components/toolbar/overview -->
+<mat-toolbar color="primary" class="toolbar">
+    <mat-toolbar-row>
+        <!-- - Aggiungo un tooltip con una direttiva di angular material:
+               https://material.angular.io/components/tooltip/overview
+             - Collego lo span tramite interpolazione alla variable titleText
+        -->
+        <span class="toolbar__title" [matTooltip]="titleText">{{ titleText }}</span>
+        <!-- Utilizzo un componente da me creato come bottone di about:
+             ./about-button/about-button.component.ts -->
+        <app-about-button class="toolbar__button--about "></app-about-button>
+
+        <button mat-icon-button (click)="logout()"><mat-icon>logout</mat-icon></button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

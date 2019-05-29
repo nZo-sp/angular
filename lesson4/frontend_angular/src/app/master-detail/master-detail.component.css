@@ -1,0 +1,41 @@
+
+:host {
+  flex: 1 1 auto;
+  display: flex;
+  min-height: 0;
+  padding: 16px 0px 16px 16px;
+  overflow: hidden;
+}
+
+.content__master {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.content__separator {
+  flex: 0 0 auto;
+  width: 16px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.content__separator:hover {
+  background: rgba(90, 0, 255, 0.2);
+}
+
+.content__separator--disabled {
+  background: transparent!important;
+  cursor: auto;
+}
+
+.content__detail {
+  width: 40%;
+  transition: width 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__detail--collapsed {
+  width: 0;
+}
