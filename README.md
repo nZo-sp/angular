@@ -1,6 +1,16 @@
 In questo documento vengono formalizzate le attività necessarie per la parte pratica del corso appena concluso.
 
 Il progetto da realizzare va selezionato fra uno dei seguenti:
+	•	Tool per la definizione di tasks
+		o	Funzionalità suggerite:
+			-	Visualizzazione task con relativo stato
+			-	Funzione di filtro per assegnatario, stato, etc.)
+			-	Creazione nuovo task (stima, titolo, descrizione, area, priorità)
+			-	Funzione di assegnazione task per admin
+			-	Funzione di aggiornamento task per utente
+			-	Funzioni di Drag&Drop per cambiare stato, assegnatario e priorità di un task
+			-	Reportistica su task
+	
 	•	Tool per la gestione di turni di lavoro
 		o	Funzionalità suggerite:
 			-	Definizione di turno (orario inizio, orario fine, luogo/stabilimento)
@@ -11,16 +21,6 @@ Il progetto da realizzare va selezionato fra uno dei seguenti:
 			-	Visualizzazione calendario settimanale persone
 			-	Controllo dei conflitti (stessa persona assegnata a più turni)
 			-	Controlli orario settimanale per ogni persona
-	
-	•	Tool per la definizione di tasks
-		o	Funzionalità suggerite:
-			-	Visualizzazione task con relativo stato
-			-	Funzione di filtro per assegnatario, stato, etc.)
-			-	Creazione nuovo task (stima, titolo, descrizione, area, priorità)
-			-	Funzione di assegnazione task per admin
-			-	Funzione di aggiornamento task per utente
-			-	Funzioni di Drag&Drop per cambiare stato, assegnatario e priorità di un task
-			-	Reportistica su task 
 
 	•	Tool per gestione richieste assenze di dipendenti (ferie, malattie, permessi studio, etc) 
 		o	Funzionalità suggerite:
